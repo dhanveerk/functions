@@ -6,6 +6,7 @@ def most_frequent(string):
             d[key] = 1
         else:
             d[key] += 1
-    return d
-
-print (most_frequent(a))
+    print_out=sorted(d,key=d.get,reverse=True)
+    for each in print_out :
+        print(each,'=',d[each])
+most_frequent(a)
